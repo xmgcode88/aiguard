@@ -1,0 +1,74 @@
+# Build outputs
+bin/
+obj/
+node_modules/
+dist/
+target/
+Debug/
+x64/
+x86/
+artifacts/
+publish/
+release/
+apps/desktop/src-tauri/target-tauri-check/
+target-verify-custom-rules/
+
+# Third-party reference projects kept locally for research only.
+# They are separate upstream projects; do not redistribute them from this repo.
+demo/
+
+# Internal product / design documentation, kept locally only
+docs/
+
+# Scratch screenshots / temporary files kept locally
+png/
+docs/png/
+tmp-*
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+~$*
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+secrets.json
+server/backups/
+
+# Visual Studio / VS Code / JetBrains
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+# Test and coverage outputs
+TestResults/
+coverage/
+coverage.*
+*.coverage
+*.coveragexml
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Windows / macOS metadata
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

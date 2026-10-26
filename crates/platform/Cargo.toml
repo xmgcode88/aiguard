@@ -1,0 +1,14 @@
+[package]
+name = "aiguard-platform"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1"
+netstat2 = "0.11"
+serde = { version = "1", features = ["derive"] }
+sysinfo = "0.36"
+thiserror = "2"
+
+[target.'cfg(windows)'.dependencies]
+wmi = "0.17.2"

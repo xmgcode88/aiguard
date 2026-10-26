@@ -1,0 +1,23 @@
+﻿[package]
+name = "license-api"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+axum.workspace = true
+base64.workspace = true
+chrono.workspace = true
+license-domain = { path = "../license-domain" }
+license-signing = { path = "../license-signing" }
+license-storage = { path = "../license-storage" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+redis.workspace = true
+totp-rs.workspace = true
+uuid.workspace = true
+
+

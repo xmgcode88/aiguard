@@ -1,0 +1,30 @@
+[package]
+name = "aiguard-desktop"
+version = "0.1.0"
+description = "AIGuard cross-platform desktop application"
+authors = ["AIGuard"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+aiguard-core = { path = "../../../crates/core" }
+aiguard-storage = { path = "../../../crates/storage" }
+aiguard-platform = { path = "../../../crates/platform" }
+aiguard-license = { path = "../../../crates/license" }
+aiguard-monitor = { path = "../../../crates/monitor" }
+aiguard-diagnostics = { path = "../../../crates/diagnostics" }
+aiguard-gateway = { path = "../../../crates/gateway" }
+chrono = { version = "0.4", features = ["clock", "serde"] }
+futures = "0.3"
+base64 = "0.22"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.32", features = ["bundled"] }
+tauri = { version = "2", features = ["tray-icon"] }
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_System_Diagnostics_Debug", "Win32_UI_WindowsAndMessaging"] }
+tokio = { version = "1", features = ["time"] }
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
