@@ -8,6 +8,7 @@
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)](#平台支持)
 [![Rust](https://img.shields.io/badge/Rust-stable-orange.svg?logo=rust)](https://www.rust-lang.org/)
 [![Tauri](https://img.shields.io/badge/Tauri-v2-24C8DB.svg?logo=tauri)](https://tauri.app/)
+[![认可 LINUX DO 社区](https://ld.xh.do/ld-badge.svg)](https://linux.do)
 
 ![AIGuard 安全总览](assets/screenshots/overview.png)
 
@@ -295,3 +296,7 @@ scripts/               规则校验与调试辅助脚本
 ## 许可证
 
 [MIT](./LICENSE)
+
+---
+
+本项目认可并链接 [LINUX DO](https://linux.do) 社区。
